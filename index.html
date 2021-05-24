@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .top {
+            display: flex;
+            background-color: white;
+            height: 97px;
+            width: 100%;
+        }
+
+        .tophead {
+            display: flex;
+            flex-direction: row;
+            height: 97px;
+            width: 95%;
+        }
+
+        #head {
+            margin: 25px 50px 0px 105px;
+            font-size: 30px;
+        }
+
+        .header {
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            margin-left: 290px;
+            margin-top: 28px
+        }
+
+        .headtitle {
+            margin-left: 15px;
+            margin-right: 15px;
+            font-size: 15px;
+            color: black
+        }
+
+        .topbutton {
+
+            width: 170px;
+            height: 33px;
+            margin: 20px 0px 0px 200px;
+            text-align: center;
+            line-height: 33px;
+            font-size: 14px;
+            border: solid 1px silver;
+        }
+
+        #topbuttontext {
+            color: grey;
+        }
+
+        #video {
+            position: absolute;
+            left: 0px;
+            top: 97px;
+            width: 100%;
+            height: 550px;
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+
+        iframe {
+            position: absolute;
+            left: -800px;
+            top: -20px;
+            width: 190%;
+            height: 190%;
+        }
+
+        .mid {
+            width: 100%;
+            height: 440px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 550px;
+
+        }
+
+        .midfirsttext {
+            display: flex;
+            width: 100%;
+            height: 227px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        #midheader {
+            font-weight: bold;
+            margin-top: 42.5px;
+            font-size: 27.5px;
+        }
+
+        .midsmalltext {
+            margin-top: 25px;
+            font-size: 15px;
+            font-weight: 320;
+        }
+
+        #midsmalltextone {
+            margin-bottom: 4px;
+        }
+
+        .midbox {
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            margin-top: 0px;
+            width: 58.6%;
+            height: 215px;
+            color: white
+        }
+
+        #midbox1 {
+            display: table;
+            width: 346.7px;
+            height: 220px;
+            background-color: rgb(48, 48, 207);
+        }
+
+        #midbox2 {
+            display: table;
+            width: 346.7px;
+            height: 220px;
+            background-color: navy;
+        }
+
+        #midbox3 {
+            display: table;
+            width: 346.7px;
+            height: 220px;
+            background-color: rgb(48, 48, 207);
+        }
+
+        .midboxhead {
+            margin-top: 28px;
+            margin-left: 25px;
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        .midboxtitle {
+            margin-top: 6px;
+            margin-left: 25px;
+            font-size: 15px;
+            font-weight: 200;
+        }
+
+        .midboxtitle2 {
+            margin-top: 82.5px;
+            margin-left: 25px;
+            font-size: 13px;
+        }
+
+        .list {
+            display: flex;
+            flex-direction: column;
+            width: 58.6%;
+            margin: auto;
+            margin-top: 50px;
+
+        }
+
+        .line {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .linefirst {
+            color: silver;
+            font-size: 13px;
+        }
+
+        .linesecond {
+            margin-left: auto;
+            width: 85%;
+            font-size: 15px;
+        }
+
+        .date {
+            margin-left: auto;
+            margin-right: 0;
+            font-size: 13px;
+        }
+
+        hr {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            color: seashell;
+
+        }
+
+        .midbottom {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 100%;
+            height: 385px;
+            background-color: whitesmoke;
+            margin-top: 60px;
+            left: 0px;
+        }
+
+        .midbottomhead {
+            margin-top: 70px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .midbottomtext {
+            margin-top: 20px;
+            font-size: 15px;
+            font-weight: lighter;
+        }
+
+        .nothing {
+            margin-top: 100px;
+            font-size: 14px;
+        }
+
+        .bottom {
+            display: flex;
+            width: 100%;
+            height: 450px;
+            background-color: navy;
+            color: white;
+        }
+
+        .bottombox {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            height: 200px;
+            margin-left: 30px;
+            margin-right: 30px;
+            
+            
+
+        }
+
+        .bottomhead {
+            display: flex;
+            flex-direction: column;
+            font-weight: bold;
+            margin:0px 0px 0px 0px;
+        }
+        .bottombigbox{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 100px;
+            margin: 0px 130px 0px 130px;
+            margin-top: 40px;
+        }
+        .bottomtitle {
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="top">
+            <div class="tophead">
+                <div id="head">(사)교육실험실21</div>
+                <div class="header">
+                    <div class="headtitle">연구 원칙</div>
+                    <div class="headtitle">연구 과정</div>
+                    <div class="headtitle">연구 활동</div>
+                    <div class="headtitle">법인소식</div>
+                    <div class="headtitle">거꾸로캠퍼스 소개</div>
+                </div>
+                <div class="topbutton">
+                    <div id="topbuttontext">입학 상담 및 지원</div>
+                </div>
+            </div>
+        </div>
+        <div id="midtop">
+            <div id="video">
+                <iframe
+                    src="https://player.vimeo.com/video/427031436?title=0&muted=1&autoplay=1&autopause=0&controls=0&loop=1&background=1&app_id=122963"
+                    frameborder="0"></iframe>
+            </div>
+        </div>
+        <div class="mid">
+            <div class="midfirsttext">
+                <div id="midheader">새로운 시대를 열어갈 다음 세대를 위한 새로운 학교</div>
+                <div class="midsmalltext">
+                    <div id="midsmalltextone">사단법인 교육실험실21의 거꾸로캠퍼스는 21세기 학습자를 위한 미래 역량 중심 교육을 제공하는 실험 학교입니다.</div>
+                    <div id="midsmalltexttwo">미래 사회에서 주체적인 삶을 살며 협력을 통해 긍정적인 변화를 이끄는 인재를 양성합니다.</div>
+                </div>
+            </div>
+            <div class="midbox">
+                <div id="midbox1">
+                    <div class="midboxhead">배움의 원칙</div>
+                    <div class="midboxtitle">
+                        <div>거꾸로캠퍼스가 실현하는</div>
+                        <div>21세기 배움의 원칙 아홉가지</div>
+                    </div>
+                    <div class="midboxtitle2">자세히보기 →</div>
+                </div>
+                <div id="midbox2">
+                    <div class="midboxhead">교육과정</div>
+                    <div class="midboxtitle">
+                        <div>거꾸로캠퍼스의 교육 과정과</div>
+                        <div>교육 프로그램에 대한 안내</div>
+                    </div>
+                    <div class="midboxtitle2">자세히보기 →</div>
+                </div>
+                <div id="midbox3">
+                    <div class="midboxhead">학교생활</div>
+                    <div class="midboxtitle">
+                        <div>거꾸로캠퍼스를 만들어가는</div>
+                        <div>학생과 교사들의 이야기</div>
+                    </div>
+                    <div class="midboxtitle2">자세히보기 →</div>
+                </div>
+            </div>
+        </div>
+        <div class="list">
+            <div class="line">
+                <div class="linefirst">경영공시</div>
+                <div class="linesecond"> 사)교육실험실21 2020년 결산공지</div>
+                <div class="date">2021-04-27</div>
+            </div>
+            <hr>
+            <div class="line">
+                <div class="linefirst">공지사항</div>
+                <div class="linesecond">2021 1모듈 거꾸로캠퍼스 배움장터 초대의 글</div>
+                <div class="date"> 2021-04-21</div>
+            </div>
+            <hr>
+            <div class="line">
+                <div class="linefirst">공지사항</div>
+                <div class="linesecond">2021 하반기 신입생 모집요강</div>
+                <div class="date">2021-03-31</div>
+            </div>
+            <hr>
+            <div class="line">
+                <div class="linefirst">공지사항</div>
+                <div class="linesecond">2021 상반기 학교설명회 안내 (2021 하반기 입학)</div>
+                <div class="date">2021-03-29</div>
+            </div>
+            <hr>
+            <div class="line">
+                <div class="linefirst">공지사항</div>
+                <div class="linesecond">2021 상반기 신입생 안내사항</div>
+                <div class="date">2020-12-14</div>
+            </div>
+            <hr>
+            <div class="line">
+                <div class="linefirst">공지사항</div>
+                <div class="linesecond">2021 상반기 거꾸로캠퍼스 입학전형 결과 공지</div>
+                <div class="date">2020-12-14</div>
+            </div>
+            <hr>
+        </div>
+        <div class="midbottom">
+            <div class="midbottomhead">학생과 교사가 함께 변화의 주체가 되어 미래의 학교를 만듭니다</div>
+            <div class="midbottomtext">거꾸로캠퍼스의 모든 순간은 특별합니다. 학생의 배움과 성장을 위해 변화하는 학교를 확인해보세요.</div>
+            <div class="nothing">게시물이 없습니다.</div>
+        </div>
+        <div class="bottom">
+            <div class="bottombigbox">
+                <div class="bottombox">
+                    <div class="bottomhead">배움의 원칙</div>
+                    <div class="bottomtitle">아홉 가지 원칙</div>
+                    <div class="bottomtitle">학교 설명서</div>
+                </div>
+                <div class="bottombox">
+                    <div class="bottomhead">교육과정</div>
+                    <div class="bottomtitle">교육과정</div>
+                    <div class="bottomtitle">특별과정</div>
+                    <div class="bottomtitle">평가방식</div>
+                    <div class="bottomtitle">학비안내</div>
+                </div>
+                <div class="bottombox">
+                    <div class="bottomhead">학교생활</div>
+                    <div class="bottomtitle">학교 이야기</div>
+                    <div class="bottomtitle">재학생 이야기</div>
+                    <div class="bottomtitle">졸업생 이야기</div>
+                    <div class="bottomtitle">교사 이야기</div>
+                </div>
+                <div class="bottombox">
+                    <div class="bottomhead">블로그</div>
+                    <div class="bottomtitle">공지사항</div>
+                    <div class="bottomtitle">학교소식</div>
+                </div>
+                <div class="bottombox">
+                    <div class="bottomhead">소개</div>
+                    <div class="bottomtitle">비전과 미션</div>
+                    <div class="bottomtitle">교육팀</div>
+                    <div class="bottomtitle">운영팀</div>
+                    <div class="bottomtitle">연혁</div>
+                    <div class="bottomtitle">소개</div>
+                    <div class="bottomtitle">로고다운로드</div>
+                    <div class="bottomtitle">어워드</div>
+                </div>
+                <div class="bottombox">
+                    <div class="bottomhead">지원하기</div>
+                    <div class="bottomtitle">지원방법 및 입학절차</div>
+                    <div class="bottomtitle">입학상담 신청</div>
+                    <div class="bottomtitle">입학지원서 작성</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
